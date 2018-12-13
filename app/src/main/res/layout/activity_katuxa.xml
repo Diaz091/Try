@@ -16,4 +16,6 @@
         android:layout_marginBottom="81dp"
         android:src="@drawable/perfect_arantza" />
 
+
+
 </RelativeLayout>

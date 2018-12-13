@@ -56,7 +56,6 @@ public class Juego extends AppCompatActivity {
         juego = findViewById( R.id.listaImgs );
         juego.setAdapter( ai );
 
-
         View header=getLayoutInflater().inflate(R.layout.lista_header,null);
         juego.addHeaderView( header );
 
@@ -74,9 +73,11 @@ public class Juego extends AppCompatActivity {
             super(contexto, R.layout.list_item, arbol );
             this.arbol = arbol;
             this.placa = placa;
+
             indiceArb = new int[arbol.length];
             indicePlc = new int[placa.length];
 
+            // ARBOLES
             for ( int i = 0; i < arbol.length; i++ ) {
                 indiceArb[i]=indiceArb.length+1;
 
@@ -100,6 +101,7 @@ public class Juego extends AppCompatActivity {
                 indiceArb[ i ] = idA;
             }
 
+            // PLACAS
             for ( int i = 0; i < placa.length; i++ ) {
                 indicePlc[i]=indicePlc.length+1;
 
