@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class Juego extends AppCompatActivity {
 
     private ListView juego;
@@ -24,33 +26,36 @@ public class Juego extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        final Image[] imgs  = new Image[]{
+        final Image[] arbol  = new Image[]{
 
                 // FOTOS ARBOL
                 new Image( getDrawable( R.drawable.arbol_1 ), 10 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_2 ), 20 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_3 ), 30 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_4 ), 40 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_5 ), 50 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_6 ), 60 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_7 ), 70 ),
-                new Image( getDrawable( R.mipmap.ic_arbol_8 ), 80 ),
+                new Image( getDrawable( R.drawable.arbol_2 ), 20 ),
+                new Image( getDrawable( R.drawable.arbol_3 ), 30 ),
+                new Image( getDrawable( R.drawable.arbol_4 ), 40 ),
+                new Image( getDrawable( R.drawable.arbol_5 ), 50 ),
+                new Image( getDrawable( R.drawable.arbol_6 ), 60 ),
+                new Image( getDrawable( R.drawable.arbol_7 ), 70 ),
+                new Image( getDrawable( R.drawable.arbol_8 ), 80 ),
+        };
+        final Image[] placa  = new Image[]{
 
                 // FOTOS PLACA
-                new Image( getDrawable( R.mipmap.ic_placa_1 ), 11 ),
-                new Image( getDrawable( R.mipmap.ic_placa_2 ), 21 ),
-                new Image( getDrawable( R.mipmap.ic_placa_3 ), 31 ),
-                new Image( getDrawable( R.mipmap.ic_placa_4 ), 41 ),
-                new Image( getDrawable( R.mipmap.ic_placa_5 ), 51 ),
-                new Image( getDrawable( R.mipmap.ic_placa_6 ), 61 ),
-                new Image( getDrawable( R.mipmap.ic_placa_7 ), 71 ),
-                new Image( getDrawable( R.mipmap.ic_placa_8 ), 81 ),
+                new Image( getDrawable( R.drawable.placa_1 ), 11 ),
+                new Image( getDrawable( R.drawable.placa_2 ), 21 ),
+                new Image( getDrawable( R.drawable.placa_3 ), 31 ),
+                new Image( getDrawable( R.drawable.placa_4 ), 41 ),
+                new Image( getDrawable( R.drawable.placa_5 ), 51 ),
+                new Image( getDrawable( R.drawable.placa_6 ), 61 ),
+                new Image( getDrawable( R.drawable.placa_7 ), 71 ),
+                new Image( getDrawable( R.drawable.placa_8 ), 81 ),
         };
 
-        AdaptadorImg ai = new AdaptadorImg( this , imgs );
+        AdaptadorImg ai = new AdaptadorImg( this , arbol , placa );
 
         juego = findViewById( R.id.listaImgs );
         juego.setAdapter( ai );
+
 
         View header=getLayoutInflater().inflate(R.layout.lista_header,null);
         juego.addHeaderView( header );
@@ -58,14 +63,64 @@ public class Juego extends AppCompatActivity {
     }
 }
 
-
     class AdaptadorImg extends ArrayAdapter<Image>{
 
-        private Image[] imgs;
+        private Image[] arbol;
+        private Image[] placa;
+        private int[] indiceArb;
+        private int[] indicePlc;
 
-        AdaptadorImg( Context contexto , Image[] imgs ){
-            super(contexto, R.layout.list_item, imgs);
-            this.imgs = imgs;
+        AdaptadorImg( Context contexto , Image[] arbol , Image[] placa){
+            super(contexto, R.layout.list_item, arbol );
+            this.arbol = arbol;
+            this.placa = placa;
+            indiceArb = new int[arbol.length];
+            indicePlc = new int[placa.length];
+
+            for ( int i = 0; i < arbol.length; i++ ) {
+                indiceArb[i]=indiceArb.length+1;
+
+                int idA = (int) Math.floor( (Math.random() * indiceArb.length) );
+
+                boolean containsArb = true;
+
+                while ( containsArb ){
+                    for( int j=0; j<=i; j++ ){
+                        // Comprobamos si esta en el array
+                        if( indiceArb[j]==idA ){
+                            containsArb = true;
+                            idA = (int) Math.floor( (Math.random() * indiceArb.length) );
+                            break;
+
+                        }else{
+                            containsArb=false;
+                        }
+                    }
+                }
+                indiceArb[ i ] = idA;
+            }
+
+            for ( int i = 0; i < placa.length; i++ ) {
+                indicePlc[i]=indicePlc.length+1;
+
+                int idP = (int) Math.floor( (Math.random() * indicePlc.length) );
+                boolean containsPlc = true;
+
+                while ( containsPlc ){
+                    for( int j=0; j<=i; j++ ){
+                        // Comprobamos si esta en el array
+                        if( indicePlc[j]==idP ){
+                            containsPlc = true;
+                            idP = (int) Math.floor( (Math.random() * indicePlc.length) );
+                            break;
+
+                        }else{
+                            containsPlc=false;
+                        }
+                    }
+                }
+                indicePlc[ i ] = idP;
+            }
         }
 
         @NonNull
@@ -76,10 +131,11 @@ public class Juego extends AppCompatActivity {
             View vista = inflater.inflate( R.layout.list_item , null);
 
             ImageButton arbolBut = vista.findViewById( R.id.arbolImg );
-            arbolBut.setImageDrawable( imgs[position].getImg() );
+            arbolBut.setImageDrawable( arbol[ indiceArb[position] ].getImg() );
+
 
             ImageButton placaBut = vista.findViewById( R.id.placaImg );
-            placaBut.setImageDrawable( imgs[position].getImg() );
+            placaBut.setImageDrawable( placa[ indicePlc[position] ].getImg() );
 
             return  vista;
         }
