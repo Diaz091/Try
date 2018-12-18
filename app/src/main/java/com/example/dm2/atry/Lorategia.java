@@ -25,7 +25,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Lorategia extends AppCompatActivity{
 
     ImageButton botonImagen;
-    GoogleMap googleMap = null;
+
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
@@ -33,6 +33,16 @@ public class Lorategia extends AppCompatActivity{
         setContentView( R.layout.activity_lorategia );
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
+        botonImagen  = ( ImageButton ) findViewById( R.id.lorategia2 );
+
+
+        botonImagen.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick( View view ) {
+                Intent intento = new Intent( Lorategia.this, Juego.class );
+                startActivity( intento );
+            }
+        } );
 
 
 
