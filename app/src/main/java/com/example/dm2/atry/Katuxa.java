@@ -37,6 +37,7 @@ public class Katuxa extends AppCompatActivity {
                 finish();
                 Intent lorategi = new Intent( Katuxa.this , Lorategia.class );
                 startActivity( lorategi );
+                finish();
             }
         } );
 

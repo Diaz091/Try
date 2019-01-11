@@ -36,6 +36,7 @@ public class Lorategia extends AppCompatActivity{
             public void onClick( View view ) {
                 Intent intento = new Intent( Lorategia.this, LamuzaParkea.class );
                 startActivity( intento );
+                finish();
             }
         } );
 
