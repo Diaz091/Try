@@ -15,12 +15,7 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+
 
 public class Lorategia extends AppCompatActivity{
 
@@ -39,7 +34,7 @@ public class Lorategia extends AppCompatActivity{
         botonImagen.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick( View view ) {
-                Intent intento = new Intent( Lorategia.this, Juego.class );
+                Intent intento = new Intent( Lorategia.this, LamuzaParkea.class );
                 startActivity( intento );
             }
         } );

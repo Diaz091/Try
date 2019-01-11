@@ -24,7 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Katuxa" >
+        <activity android:name=".Katuxa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,16 +40,9 @@
              sign the APK for publishing.
              You can definethe keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBVeGi9VK6u37Qa9U4pdWUSp6_a1BTzcG0" />
 
-        <activity android:name=".Juego">
-
-        </activity>
+        <activity android:name=".Juego"></activity>
+        <activity android:name=".LamuzaParkea"></activity>
     </application>
 
 </manifest>
