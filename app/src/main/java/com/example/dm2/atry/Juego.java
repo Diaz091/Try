@@ -452,7 +452,11 @@ public class Juego extends AppCompatActivity {
                 iv_43.getVisibility() == View.INVISIBLE &&
                 iv_44.getVisibility() == View.INVISIBLE ){
 
-            AlertDialog.Builder alertDialogBuilder   = new AlertDialog.Builder(Juego.this);
+            Intent intento = new Intent( Juego.this , FinJuego.class );
+            startActivity( intento );
+            finish();
+
+           /* AlertDialog.Builder alertDialogBuilder   = new AlertDialog.Builder(Juego.this);
             alertDialogBuilder
                     .setMessage( "YOU WON LAD" )
                     .setCancelable( false )
@@ -473,7 +477,7 @@ public class Juego extends AppCompatActivity {
                         }
                     });
             AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();
+            alertDialog.show();*/
         }
     }
 

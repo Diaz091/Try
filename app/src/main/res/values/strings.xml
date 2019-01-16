@@ -95,5 +95,7 @@
     <string name="action_settings">Settings</string>
     <string name="tituloJ">Zuhaitzak Eta Euren Plakak Bikoteka Jartzeko</string>
     <string name="tituloL">Lamuza Parkea</string>
+    <string name="repetir">Errepikatu</string>
+    <string name="seguir">Jarraitu</string>
 
 </resources>
