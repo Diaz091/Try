@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dm2.atry">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -40,10 +39,9 @@
              sign the APK for publishing.
              You can definethe keys for the debug and release targets in src/debug/ and src/release/.
         -->
-
         <activity android:name=".Juego" />
         <activity android:name=".LamuzaParkea" />
-        <activity android:name=".FinJuego"></activity>
+        <activity android:name=".FinJuego" />
     </application>
 
 </manifest>
