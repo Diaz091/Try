@@ -42,7 +42,7 @@ public class MapFragment extends Fragment {
             @Override
             public void onClick( View v ) {
 
-                Intent horario = new Intent( getContext() , LamuzaParkea.class );
+                Intent horario = new Intent( getContext() , HorarioTren.class );
                 startActivity( horario );
 
             }
