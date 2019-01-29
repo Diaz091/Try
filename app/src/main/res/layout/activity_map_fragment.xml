@@ -7,6 +7,7 @@
 
 
     <Button
+        android:id="@+id/botTren"
         android:layout_width="119dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
@@ -21,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintVertical_bias="0.754"/>
 
 
     <ImageView
@@ -40,6 +41,7 @@
         app:layout_constraintVertical_bias="0.016" />
 
     <ImageView
+        android:id="@+id/imgTxomin"
         android:layout_width="128dp"
         android:layout_height="114dp"
         android:layout_marginStart="8dp"

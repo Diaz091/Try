@@ -17,13 +17,14 @@
        android:layout_marginEnd="8dp"
        android:layout_marginBottom="8dp"
        android:background="@drawable/background"
-       android:text="@string/repetir"
+       android:text="@string/seguir"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.964"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.875" />
+       app:layout_constraintVertical_bias="0.875"
+       android:onClick="continuar"/>
 
    <Button
        android:id="@+id/bot2"
@@ -33,12 +34,29 @@
        android:layout_marginTop="156dp"
        android:layout_marginEnd="8dp"
        android:layout_marginBottom="8dp"
-       android:text="@string/seguir"
+       android:text="@string/repetir"
        android:background="@drawable/background"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.0"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.875" />
+       app:layout_constraintVertical_bias="0.875"
+       android:onClick="repetir"/>
+
+    <ImageView
+        android:layout_width="201dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/txomin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
 </android.support.constraint.ConstraintLayout>
