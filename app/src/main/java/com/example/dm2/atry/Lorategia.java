@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +20,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import java.util.logging.Handler;
-
 
 public class Lorategia extends AppCompatActivity{
 
@@ -27,6 +27,7 @@ public class Lorategia extends AppCompatActivity{
     private Button botonTren;
     private ImageView imgTxomin;
     private LinearLayout mapa;
+    private MediaPlayer txomin18;
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
@@ -44,11 +45,27 @@ public class Lorategia extends AppCompatActivity{
         mapa = findViewById( R.id.lMapa );
         mapa.setVisibility( View.INVISIBLE );
 
+        txomin18 = MediaPlayer.create( this, R.raw.txomin18 ); // Reproductor del Sonido
 
         botonImagen.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick( View view ) {
                 mapa.setVisibility( View.VISIBLE );
+
+                new Handler(  ).postDelayed( new Runnable() {
+                    @Override
+                    public void run() {
+                        imgTxomin.setVisibility( View.VISIBLE );
+                        txomin18.start();
+
+                        txomin18.setOnCompletionListener( new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion( MediaPlayer mp ) {
+                                botonTren.setVisibility( View.VISIBLE );
+                            }
+                        } );
+                    }
+                },10000 );
 
             }
         } );

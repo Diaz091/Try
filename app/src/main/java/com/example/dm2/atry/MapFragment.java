@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 public class MapFragment extends Fragment {
     private ImageView imgTxomin;
-    private MediaPlayer txomin18;
+
     private Button botonTren;
     private Lorategia lr;
 
@@ -35,23 +35,8 @@ public class MapFragment extends Fragment {
         imgTxomin.setVisibility( View.INVISIBLE );
 
 
-        txomin18 = MediaPlayer.create( this.getContext() , R.raw.txomin18 ); // Reproductor del Sonido
+
         botonTren= ( Button ) view.findViewById( R.id.botTren );
-
-        new Handler(  ).postDelayed( new Runnable() {
-            @Override
-            public void run() {
-                imgTxomin.setVisibility( View.VISIBLE );
-                txomin18.start();
-
-                txomin18.setOnCompletionListener( new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion( MediaPlayer mp ) {
-                        botonTren.setVisibility( View.VISIBLE );
-                    }
-                } );
-            }
-        },5000 );
 
         botonTren.setOnClickListener( new View.OnClickListener() {
             @Override
