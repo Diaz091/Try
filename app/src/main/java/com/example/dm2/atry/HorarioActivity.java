@@ -32,9 +32,9 @@ public class HorarioActivity extends AppCompatActivity {
 
         Bundle b = getIntent().getExtras();
         int chose = b.getInt( DIRECCION );
-        String file = MainActivity.ST_LLODIO_H_FILE;
+        String file = Katuxa.ST_LLODIO_H_FILE;
         if( chose == LLODIO_ST )
-            file = MainActivity.LLODIO_ST_H_FILE;
+            file = Katuxa.LLODIO_ST_H_FILE;
         try {
             s = Selector.build().setDocument( new BufferedReader( new FileReader( getFileStreamPath( file ) ) ) );
 

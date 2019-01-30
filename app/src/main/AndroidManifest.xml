@@ -25,8 +25,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Ruta"></activity>
         <activity android:name=".LamuzaParkeaIngurua" />
-        <activity android:name=".HorarioTren" />
-        <activity android:name=".MapFragment" />
+        <activity android:name=".HorarioActivity" />
         <activity android:name=".Katuxa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
