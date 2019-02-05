@@ -1,9 +1,11 @@
 package com.example.dm2.atry;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +31,7 @@ public class HorarioActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_horario );
+        getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
         Bundle b = getIntent().getExtras();
         int chose = b.getInt( DIRECCION );
@@ -63,5 +66,14 @@ public class HorarioActivity extends AppCompatActivity {
         } catch ( IOException e ) {
             e.printStackTrace();
         }
+
+        new Handler(  ).postDelayed( new Runnable() {
+            @Override
+            public void run() {
+                Intent ruta = new Intent( HorarioActivity.this , Ruta.class );
+                startActivity( ruta );
+                finish();
+            }
+        },10000 );
     }
 }

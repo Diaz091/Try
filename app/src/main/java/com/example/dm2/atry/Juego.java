@@ -455,29 +455,6 @@ public class Juego extends AppCompatActivity {
             Intent intento = new Intent( Juego.this , FinJuego.class );
             startActivity( intento );
             finish();
-
-           /* AlertDialog.Builder alertDialogBuilder   = new AlertDialog.Builder(Juego.this);
-            alertDialogBuilder
-                    .setMessage( "YOU WON LAD" )
-                    .setCancelable( false )
-                    .setPositiveButton("New", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent( getApplicationContext() , MainActivity.class);
-                            startActivity( intent );
-                            finish();
-                        }
-                    })
-                    .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intento  = new Intent( getApplicationContext() , Lorategia.class);
-                            startActivity( intento );
-                            finish();
-                        }
-                    });
-            AlertDialog alertDialog = alertDialogBuilder.create();
-            alertDialog.show();*/
         }
     }
 

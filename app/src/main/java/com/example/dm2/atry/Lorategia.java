@@ -1,6 +1,7 @@
 package com.example.dm2.atry;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -28,12 +29,17 @@ public class Lorategia extends AppCompatActivity{
     private ImageView imgTxomin;
     private LinearLayout mapa;
     private MediaPlayer txomin18;
+    private static Activity lor;
+
+
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_lorategia );
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
+
+        lor = this;
 
         botonImagen  = ( ImageButton ) findViewById( R.id.lorategia2 );
         botonTren= ( Button ) findViewById( R.id.botTren );
@@ -65,14 +71,13 @@ public class Lorategia extends AppCompatActivity{
                             }
                         } );
                     }
-                },10000 );
+                },2000 );
 
             }
         } );
-
-
-
-
     }
 
+    public static Activity getLor() {
+        return lor;
+    }
 }

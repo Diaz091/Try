@@ -46,6 +46,9 @@ public class MapFragment extends Fragment {
                 horario.putExtra( HorarioActivity.DIRECCION, HorarioActivity.ST_LLODIO );
                 startActivity( horario );
 
+                Lorategia.getLor().finish();
+
+
             }
         } );
 
