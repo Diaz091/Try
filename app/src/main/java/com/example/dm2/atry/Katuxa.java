@@ -1,19 +1,13 @@
 package com.example.dm2.atry;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.media.AudioRouting;
 import android.media.MediaPlayer;
-import android.media.TimedText;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.marck.renfeApi.RenfeRequest;
@@ -42,7 +36,7 @@ public class Katuxa extends AppCompatActivity {
                 StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        arantza18 = MediaPlayer.create(this, R.raw.arantza1); // "Reproductor del Sonido"
+        arantza18 = MediaPlayer.create(this, R.raw.arantza18); // "Reproductor del Sonido"
         arantza18.start(); // Iniciar el Sonido al iniciar la actividad
 
         arantza18.setOnCompletionListener( new MediaPlayer.OnCompletionListener() {
