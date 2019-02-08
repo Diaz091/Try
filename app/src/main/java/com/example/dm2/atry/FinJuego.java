@@ -27,6 +27,8 @@ public class FinJuego extends AppCompatActivity {
                 continuar( );
             }
         } );
+
+
         repetir = findViewById( R.id.errepikatu );
         repetir.setOnClickListener( new View.OnClickListener() {
             @Override

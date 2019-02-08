@@ -32,73 +32,73 @@
 
     <ImageView
         android:id="@+id/foto1"
-        android:layout_width="184dp"
-        android:layout_height="260dp"
+        android:layout_width="155dp"
+        android:layout_height="219dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/iturria1"
+        android:tag="incorrecta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221"
-        android:tag="incorrecta"/>
+        app:layout_constraintVertical_bias="0.221" />
 
 
     <ImageView
         android:id="@+id/foto2"
-        android:layout_width="186dp"
-        android:layout_height="142dp"
+        android:layout_width="160dp"
+        android:layout_height="127dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/iturria2"
+        android:tag="incorrecta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663"
-        android:tag="incorrecta"/>
+        app:layout_constraintVertical_bias="0.663" />
 
 
     <ImageView
         android:id="@+id/foto3"
-        android:layout_width="186dp"
-        android:layout_height="145dp"
+        android:layout_width="165dp"
+        android:layout_height="130dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/iturria3"
+        android:tag="incorrecta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666"
-        android:tag="incorrecta"/>
+        app:layout_constraintVertical_bias="0.666" />
 
 
     <ImageView
         android:id="@+id/foto4"
-        android:layout_width="184dp"
-        android:layout_height="296dp"
+        android:layout_width="154dp"
+        android:layout_height="239dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/iturria4"
+        android:tag="correcta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        android:tag="correcta"/>
+        app:layout_constraintVertical_bias="0.205" />
 
 </android.support.constraint.ConstraintLayout>

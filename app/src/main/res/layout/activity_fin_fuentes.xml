@@ -31,8 +31,8 @@
 
         <ImageView
             android:id="@+id/jarraitu"
-            android:layout_width="160dp"
-            android:layout_height="97dp"
+            android:layout_width="146dp"
+            android:layout_height="86dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
@@ -43,14 +43,14 @@
             android:src="@drawable/ic_btn2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintHorizontal_bias="0.969"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.935" />
+            app:layout_constraintVertical_bias="0.965" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="85dp"
+            android:layout_height="37dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
@@ -60,13 +60,13 @@
             android:layout_marginBottom="8dp"
             android:text="@string/seguir"
             android:textColor="@color/negro"
-            android:textSize="30dp"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.774"
+            app:layout_constraintHorizontal_bias="0.883"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.896" />
+            app:layout_constraintVertical_bias="0.936" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -77,8 +77,8 @@
 
         <ImageView
             android:id="@+id/errepikatu"
-            android:layout_width="160dp"
-            android:layout_height="97dp"
+            android:layout_width="151dp"
+            android:layout_height="88dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
@@ -89,14 +89,14 @@
             android:src="@drawable/ic_btn2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.932" />
+            app:layout_constraintVertical_bias="0.969" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="106dp"
+            android:layout_height="37dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
@@ -106,13 +106,13 @@
             android:layout_marginBottom="8dp"
             android:text="@string/repetir"
             android:textColor="@color/negro"
-            android:textSize="30dp"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.893" />
+            app:layout_constraintVertical_bias="0.939" />
 
     </android.support.constraint.ConstraintLayout>
 
@@ -130,7 +130,7 @@
             app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.265" />
+            app:layout_constraintVertical_bias="0.19" />
 
         <TextView
             android:layout_width="214dp"
@@ -145,10 +145,10 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintHorizontal_bias="0.386"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.335" />
+            app:layout_constraintVertical_bias="0.271" />
 
     </android.support.constraint.ConstraintLayout>
 
