@@ -23,7 +23,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ruta"></activity>
+        <activity android:name=".PreGame"></activity>
+        <activity android:name=".Ruta" />
         <activity android:name=".LamuzaParkeaIngurua" />
         <activity android:name=".HorarioActivity" />
         <activity android:name=".Katuxa">

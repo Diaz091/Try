@@ -43,6 +43,8 @@ public class MapFragment extends Fragment {
                 Intent horario = new Intent( getContext() , HorarioActivity.class );
                 horario.putExtra( HorarioActivity.DIRECCION, HorarioActivity.ST_LLODIO );
                 startActivity( horario );
+                
+
 
                 Lorategia.getLor().finish();
 

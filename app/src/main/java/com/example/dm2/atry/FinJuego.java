@@ -35,17 +35,11 @@ public class FinJuego extends AppCompatActivity {
             }
         });
 
-        txomin19 = MediaPlayer.create( this , R.raw.txomin18 ); // Reproductor del Sonido
+        txomin19 = MediaPlayer.create( this , R.raw.txomin19 ); // Reproductor del Sonido
+
             if(!repitiendo) {
                 txomin19.start();
-
-                txomin19.setOnCompletionListener( new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion( MediaPlayer mp ) {
-
-                    }
-                } );
-        }
+            }
     }
 
     public void continuar(  ) {
