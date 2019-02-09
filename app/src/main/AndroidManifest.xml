@@ -23,17 +23,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreGame"></activity>
-        <activity android:name=".Ruta" />
-        <activity android:name=".LamuzaParkeaIngurua" />
-        <activity android:name=".HorarioActivity" />
-        <activity android:name=".Katuxa">
+        <activity android:name=".Skate"></activity>
+        <activity android:name=".Urmaela" />
+        <activity android:name=".FinFuentes" />
+        <activity android:name=".Fuentes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PreGame" />
+        <activity android:name=".Ruta" />
+        <activity android:name=".LamuzaParkeaIngurua" />
+        <activity android:name=".HorarioActivity" />
+        <activity android:name=".Katuxa" />
         <activity android:name=".Lorategia" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
