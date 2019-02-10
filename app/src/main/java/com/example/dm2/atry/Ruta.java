@@ -21,6 +21,6 @@ public class Ruta extends AppCompatActivity {
                 startActivity( ruta );
                 finish();
             }
-        },1000 );
+        },3000 );
     }
 }

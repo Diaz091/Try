@@ -23,7 +23,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Skate"></activity>
+        <activity android:name=".Gudariak"></activity>
+        <activity android:name=".Zubia" />
+        <activity android:name=".Skate" />
         <activity android:name=".Urmaela" />
         <activity android:name=".FinFuentes" />
         <activity android:name=".Fuentes">

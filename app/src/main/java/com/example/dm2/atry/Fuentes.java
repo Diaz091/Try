@@ -39,6 +39,7 @@ public class Fuentes extends AppCompatActivity {
                 }else{
                     Intent finFuentes = new Intent( Fuentes.this , FinFuentes.class );
                     startActivity( finFuentes );
+                    finish();
                 }
             }
         } );
@@ -52,6 +53,7 @@ public class Fuentes extends AppCompatActivity {
                 }else{
                     Intent finFuentes = new Intent( Fuentes.this , FinFuentes.class );
                     startActivity( finFuentes );
+                    finish();
                 }
             }
         } );
@@ -65,6 +67,7 @@ public class Fuentes extends AppCompatActivity {
                 }else{
                     Intent finFuentes = new Intent( Fuentes.this , FinFuentes.class );
                     startActivity( finFuentes );
+                    finish();
                 }
             }
         } );
@@ -78,6 +81,7 @@ public class Fuentes extends AppCompatActivity {
                 }else{
                     Intent finFuentes = new Intent( Fuentes.this , FinFuentes.class );
                     startActivity( finFuentes );
+                    finish();
                 }
             }
         } );
